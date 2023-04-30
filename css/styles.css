@@ -53,6 +53,8 @@ footer .logo {
   line-height: 1.17;
   text-transform: uppercase;
 }
+
+
 /* Атрибути */
 .link {
   text-decoration: none;
@@ -68,6 +70,7 @@ footer .logo {
 img {
   display: block;
 }
+
 
 /* Хедер */
 .page-header {
@@ -98,6 +101,7 @@ img {
   color: var(--accent-hover-color);
 }
 
+
 /* contacts */
 .address-list {
   padding: 0;
@@ -122,6 +126,7 @@ address a {
 .address .link:focus {
   color: var(--accent-hover-color);
 }
+
 
 /* Герой */
 .hero-title {
@@ -151,6 +156,7 @@ address a {
   background-size: cover;
 }
 
+
 /* Секція ВЛАСТИВОСТІ */
 .section-features {
   padding-top: 120px;
@@ -175,7 +181,6 @@ address a {
   border-radius: 4px;
   margin-bottom: 8px;
 }
-
 .features-title {
   margin-top: 8px;
   margin-bottom: 8px;
@@ -193,6 +198,8 @@ address a {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+
 /* Секція РОБОТИ */
 .section-works {
   padding-bottom: 120px;
@@ -215,6 +222,7 @@ address a {
   text-transform: capitalize;
   letter-spacing: 0.02em;
 }
+
 
 /* Секція КОМАНДА */
 .section-description {
@@ -288,10 +296,43 @@ address a {
 .social-net {
   fill: var(--secondary-white-color);
 }
+
+
+/* Секція ЗАМОВНИКИ */
 .section-customers {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.customers-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.customer-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.customer-link {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #8E8F99;
+}
+.customer-link:hover {
+  color: var(--accent-hover-color);
+  border-color: var(--accent-hover-color);
+}
+.customer-company {
+  fill: currentColor;
+}
+
+
 /* секція портфоліо */
 .section-portfolio {
   padding-top: 96px;
@@ -323,6 +364,8 @@ address a {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
+
 /* Футер */
 .footer-description {
   color: var(--secondary-white-color);
@@ -336,7 +379,11 @@ address a {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+.footer-socials {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
+}
 /* Кнопки */
 button {
   color: var(--primary-white-color);
