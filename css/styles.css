@@ -135,12 +135,16 @@ address a {
 }
 .hero {
   background-color: var(--primary-text-color);
+  background-image: url(../images/people-office.jpg);
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-/* Секції */
+/* Секція ВЛАСТИВОСТІ */
 .section-features {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -155,6 +159,39 @@ address a {
 .feature-name {
   width: calc((100% - 72px) / 4);
 }
+.feature-name::before {
+  display: block;
+  content: "";
+  height: 112px;
+  background-color: var(--secondary-white-color);
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url("../images/antenna.svg");
+  
+}
+.icon-clock::before {
+  background-image: url("../images/clock.svg");
+}
+.icon-laptop::before {
+  background-image: url("../images/laptop.svg");
+}
+.icon-astronaut::before {
+  background-image: url("../images/astronaut.svg");
+}
+.features-title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* Секція РОБОТИ */
 .section-works {
   padding-bottom: 120px;
 }
@@ -176,15 +213,8 @@ address a {
   text-transform: capitalize;
   letter-spacing: 0.02em;
 }
-.section-name {
-  margin-top: 0;
-  margin-bottom: 8px;
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
+
+/* Секція КОМАНДА */
 .section-description {
   color: var(--secondary-text-color);
   font-weight: 400;
@@ -192,16 +222,6 @@ address a {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.section-list {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-top: 0;
-  margin-bottom: 8px;
 }
 .section-team {
   background-color: var(--secondary-white-color);
@@ -222,11 +242,24 @@ address a {
 .worker {
   padding: 32px 16px;
 }
-.section-team .section-name {
+.worker-name {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.section-team .worker-name {
   text-align: center;
 }
 .section-team .section-description {
   text-align: center;
+}
+.section-customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 /* секція портфоліо */
 .section-portfolio {
@@ -241,6 +274,15 @@ address a {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+.section-list {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .portfolio-items {
   width: 360px;
