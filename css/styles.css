@@ -55,6 +55,7 @@ footer .logo {
   text-transform: uppercase;
 }
 
+
 /* Атрибути */
 .link {
   text-decoration: none;
@@ -70,6 +71,7 @@ footer .logo {
 img {
   display: block;
 }
+
 
 /* Хедер */
 .page-header {
@@ -100,6 +102,7 @@ img {
   color: var(--accent-hover-color);
 }
 
+
 /* contacts */
 .address-list {
   padding: 0;
@@ -124,6 +127,7 @@ address a {
 .address .link:focus {
   color: var(--accent-hover-color);
 }
+
 
 /* Герой */
 .hero-title {
@@ -152,6 +156,7 @@ address a {
   background-position: center;
   background-size: cover;
 }
+
 
 /* Секція ВЛАСТИВОСТІ */
 .section-features {
@@ -195,6 +200,7 @@ address a {
   margin-bottom: 0;
 }
 
+
 /* Секція РОБОТИ */
 .section-works {
   padding-bottom: 120px;
@@ -217,6 +223,7 @@ address a {
   text-transform: capitalize;
   letter-spacing: 0.02em;
 }
+
 
 /* Секція КОМАНДА */
 .section-description {
@@ -291,6 +298,7 @@ address a {
   fill: var(--secondary-white-color);
 }
 
+
 /* Секція ЗАМОВНИКИ */
 .section-customers {
   padding-top: 120px;
@@ -304,18 +312,18 @@ address a {
   margin-bottom: 0;
 }
 .customer-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100%-120px) / 6);
   height: 88px;
 }
 .customer-link {
   height: 100%;
   width: 100%;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8e8f99;
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #8E8F99;
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -325,6 +333,7 @@ address a {
 .customer-company {
   fill: currentColor;
 }
+
 
 /* секція портфоліо */
 .section-portfolio {
@@ -363,8 +372,7 @@ address a {
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Футер */
@@ -374,6 +382,7 @@ address a {
   font-size: 16px;
   line-height: 1.5;
   max-width: 264px;
+  /* display: inline-block; */
 }
 .page-footer {
   background-color: var(--primary-text-color);
@@ -381,15 +390,17 @@ address a {
   padding-bottom: 100px;
 }
 .footer-socials {
-  gap: 120px;
+  margin-right: 120px
+  /* display: flex;
+  align-items: baseline; */
 }
 .footer-media {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-white-color);
-  margin-bottom: 16px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-white-color);
+margin-bottom: 16px;
 }
 .footer-list {
   display: flex;
@@ -467,14 +478,14 @@ button {
   border-radius: 4px;
   padding: 12px 24px;
   border: 1px solid var(--border-btn-color);
+  
 }
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-hover-color);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pointer {
   cursor: pointer;
