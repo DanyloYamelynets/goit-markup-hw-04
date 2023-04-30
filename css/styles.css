@@ -390,6 +390,7 @@ address a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
+  margin: 0;
   margin-bottom: 16px;
 }
 .footer-list {
@@ -397,6 +398,7 @@ address a {
   gap: 16px;
   list-style: none;
   padding: 0;
+  margin-top: 0;
 }
 .footer-item {
   width: 40px;
